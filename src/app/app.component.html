@@ -1,18 +1,3 @@
-<mat-sidenav-container *ngIf="shouldRun">
-  <mat-sidenav #sidenav>Home</mat-sidenav>
-  <mat-sidenav-content>
-
-    <mat-toolbar>
-      <mat-toolbar-row>
-        <a mat-button (click)="sidenav.toggle()">Menu</a>
-        <span class="spacer"></span>
-        <a mat-button (click)="sidenav.toggle()">Options</a>
-      </mat-toolbar-row>
-    </mat-toolbar>
-
-    <mat-card>
-      <img mat-card-image src="../assets/images/sr-chido-logo.jpeg">
-    </mat-card>
-
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<app-nav>
+  <router-outlet></router-outlet>
+</app-nav>

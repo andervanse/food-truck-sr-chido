@@ -1,11 +1,12 @@
 {
-  "name": "food-truck",
-  "short_name": "food-truck",
-  "theme_color": "#1976d2",
+  "name": "Sr. Chido",
+  "short_name": "Sr. Chido",
+  "theme_color": "#399b01",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
+  "orientation": "portrait",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
