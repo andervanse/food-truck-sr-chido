@@ -7,30 +7,38 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatCardModule} from '@angular/material/card';
 
-import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppNavComponent } from './navigator/navigator.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule, MatIconModule, MatListModule, MatGridListModule } from '@angular/material';
+
+import { environment } from '../environments/environment';
+import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
-
+import { FotosComponent } from './fotos/fotos.component';
+import { SobreComponent } from './sobre/sobre.component';
+import { AgendaComponent } from './agenda/agenda.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'menu', component: MenuComponent },
+  { path: 'fotos', component: FotosComponent },
+  { path: 'agenda', component: AgendaComponent },
+  { path: 'sobre', component: SobreComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
-  declarations: [
+  declarations: [ 
     AppComponent,
     AppNavComponent,
     HomeComponent,
-    MenuComponent
-
+    MenuComponent,
+    FotosComponent,
+    SobreComponent,
+    AgendaComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +57,4 @@ const appRoutes: Routes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-
-}
+export class AppModule { }
