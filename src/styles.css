@@ -8,6 +8,18 @@ body {
     font-family: Roboto, "Helvetica Neue", sans-serif; 
 }
 
+.container {
+    display: flex;    
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .mat-toolbar.mat-primary {
     background: #399b01;
+}
+
+.mat-card {
+    padding: 20px;
+    border-radius: 0px;
 }

@@ -1,0 +1,55 @@
+{
+    "id":"123456",
+    "categorias": [
+        {
+            "ordem": 1,
+            "nome": "BURRITOS",
+            "urlImagem":"/imagens/burrito.png",
+            "itens": [
+            {
+                "nome": "SUADERO",
+                "descricao": "1 TORTILHA DE TRIGO SUAVE ENROLADAS COM CARNE BOVINA",
+                "urlImagem": "/imagens/suadero.png",
+                "preco": "25.00"
+            },
+            {
+                "nome": "AL PASTOR",
+                "descricao": "1 TORTILHA DE TRIGO SUAVE ENROLADAS COM PORCO E ABACAXI",
+                "urlImagem": "/imagens/al-pastor.png",
+                "preco": "23.20"
+            },
+            {
+                "nome": "LONGANIZA",
+                "descricao": "1 TORTILHA DE TRIGO SUAVE ENROLADAS FRANGO",
+                "urlImagem": "/imagens/longaniza.png",
+                "preco": "15.20"
+            }                        
+        ],
+        "observacao": "TODOS ACOMPANHAM COENTRO, CEBOLA, TOMATE, SOUR CREAM E CHILI"
+    },
+    {
+        "ordem": 2,
+        "nome": "TACOS",
+        "urlImagem":"/imagens/burrito.png",
+        "itens": [
+        {
+            "nome": "3 TACOS SUADERO",
+            "descricao": "TORTILLAS ORIGINALMENTE MEXICANAS DE MILHO SUAVE RECHEADAS DE CARNE BOVINA",
+            "urlImagem": "/imagens/suadero.png",
+            "preco": "25.00"
+        },
+        {
+            "nome": "3 TACOS AL PASTOR",
+            "descricao": "TORTILLAS ORIGINALMENTE MEXICANAS DE MILHO SUAVE RECHEADAS DE CARNE SUÍNA E ABACAXI",
+            "urlImagem": "/imagens/al-pastor.png",
+            "preco": "23.20"
+        },
+        {
+            "nome": "3 TACOS DE POLLO",
+            "descricao": "TORTILLAS ORIGINALMENTE MEXICANAS DE MILHO SUAVE RECHEADAS DE FRANGO",
+            "urlImagem": "/imagens/longaniza.png",
+            "preco": "23.00"
+        }],
+        "observacao": "TODOS ACOMPANHAM COENTRO E CEBOLA"        
+   }]
+}

@@ -1,7 +1,34 @@
 <br>
-<br>
+
 <div class="container">
-  <mat-card>
+
+  <mat-card *ngIf="!dinamico">
     <img mat-card-image src="../assets/images/sr-chido-menu.png">
   </mat-card>
+
+  <div *ngIf="dinamico" > 
+    <div *ngFor="let categoria of menu?.categorias" class="box">
+      <div class="title brown">
+        <b>{{ categoria.nome }}</b>
+        <div class="right">
+          <img width="100px" height="70px" [src]="item?.urlImagem">
+        </div>
+      </div>
+
+      <div *ngFor="let item of categoria.itens">
+        <div class="subtitle green">
+          {{ createDots(item.nome, 50) }} &nbsp;&nbsp; <span class="right"> {{ item.preco | currency:'BRL' }} </span>
+        </div> 
+        <div class="subtitle brown">       
+          &nbsp;&nbsp;{{ item.descricao }}  
+        </div> 
+        <br>          
+      </div>
+
+    </div>
+  </div>
+
 </div>
+
+<br>
+<br>

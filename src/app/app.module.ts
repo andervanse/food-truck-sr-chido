@@ -20,6 +20,8 @@ import { HomeComponent } from './home/home.component';
 import { FotosComponent } from './fotos/fotos.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { AgendaComponent } from './agenda/agenda.component';
+import { MenuService } from './services/menu.service';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -43,6 +45,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     RouterModule.forRoot( appRoutes, { useHash: true } ),        
     MatSidenavModule,
@@ -54,7 +57,7 @@ const appRoutes: Routes = [
     MatListModule,
     MatGridListModule
   ],
-  providers: [],
+  providers: [MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

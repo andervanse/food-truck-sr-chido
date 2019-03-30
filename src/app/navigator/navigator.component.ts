@@ -11,22 +11,27 @@ import { MatSidenav } from '@angular/material';
 })
 export class AppNavComponent {
 
-  @ViewChild('drawer') drawer : MatSidenav;
-  isHandSetValue : boolean;
+  @ViewChild('drawer') drawer: MatSidenav;
+  isHandSetValue: boolean;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches)
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver) { }
 
-  toggle() {
-    this.isHandset$.subscribe((v) => this.isHandSetValue = v);
+  toggle(evt) {
+    evt.preventDefault();
 
-    if (this.isHandSetValue) {
-       this.drawer.toggle();
-    }    
+    this.isHandset$.subscribe((v) => {
+      this.isHandSetValue = v;
+
+      if (this.isHandSetValue) {
+        this.drawer.toggle();
+      }
+    });
+
   }
 
 }
