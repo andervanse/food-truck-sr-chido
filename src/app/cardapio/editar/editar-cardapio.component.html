@@ -1,0 +1,42 @@
+<div class="container menu-color">
+
+  <div class="box">
+    <button mat-raised-button color="primary" (click)="salvarCardapio()">Salvar</button>
+  </div>
+
+  <br>
+  <div *ngFor="let categoria of cardapio?.categorias" class="box">
+    <div class="title brown">
+      <b>{{ categoria.nome }}</b>
+      <div class="right" id="file-upload">
+        <input type="file" class="file" accept="image/*" (change)="imageUpload($event, categoria)" />
+        <img *ngIf="categoria.imgUpload" width="90px" height="80px" [src]="categoria.imgUpload" />
+        <img *ngIf="!categoria.imgUpload" width="90px" height="80px" [src]="categoria?.urlImagem ? categoria?.urlImagem : '../../../assets/images/no-image.png'" />
+      </div>
+    </div>
+    <br>
+    <br>
+    <button mat-raised-button color="primary" (click)="openEditarDialog(categoria, undefined)">Novo</button>
+    <br>
+    <br>
+    <div class="item-categoria" *ngFor="let item of categoria.itens">
+      <div class="subtitle green">
+        {{ createDots(item.nome, 45) }} &nbsp;&nbsp; <span class="right"> {{ item.preco | currency:'BRL' }} </span>
+      </div>
+      <div class="subtitle brown description">
+        {{ item.descricao }}
+      </div>
+      <br>
+      <div class="right">
+        <button mat-raised-button color="primary" (click)="openEditarDialog(categoria, item)">Editar</button>
+        &nbsp;
+        <button mat-raised-button color="warn" (click)="openExcluirDialog(categoria, item)">Excluir</button>
+      </div>
+      <br>
+    </div>
+    <hr>
+  </div>
+
+  <br>
+  <br>
+</div>

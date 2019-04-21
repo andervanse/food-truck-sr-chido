@@ -8,9 +8,10 @@
       </a>
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#" routerLink="menu" (click)="toggle($event)">Menu</a>
+      <a mat-list-item href="#" routerLink="cardapio" (click)="toggle($event)">Cardápio</a>
       <a mat-list-item href="#" routerLink="fotos" (click)="toggle($event)">Fotos</a>
       <a mat-list-item href="#" routerLink="agenda" (click)="toggle($event)">Agenda</a>
+      <!-- <a mat-list-item href="#" routerLink="login" (click)="toggle($event)">Login</a> -->
       <hr>      
       <a mat-list-item href="#" routerLink="sobre" (click)="toggle($event)">Sobre</a>
     </mat-nav-list>
@@ -25,7 +26,7 @@
         <mat-icon aria-label="Side nav toggle icon">home</mat-icon>
       </a>
       <span class="spacer"></span>
-      <a mat-button href="#" routerLink="menu">Menu</a>
+      <a mat-button href="#" routerLink="cardapio">Cardápio</a>
     </mat-toolbar>
 
     <ng-content></ng-content>

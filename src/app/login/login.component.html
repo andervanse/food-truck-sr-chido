@@ -1,0 +1,27 @@
+<br>
+<br>
+<mat-card>
+  <form #frmLogin="ngForm" (ngSubmit)="onSubmitForm()" novalidate>
+    <mat-card-header>
+      <mat-card-title>Login</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+
+      <mat-form-field>
+        <input matInput placeholder="Usuário" name="usuario" type="text" minlength="5" maxlength="30">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Senha" name="senha" type="password" minlength="5" maxlength="30">
+      </mat-form-field>
+
+      <mat-card-footer class="right">
+        <button mat-raised-button type="submit">
+          Entrar
+        </button>
+      </mat-card-footer>
+
+    </mat-card-content>
+  </form>
+  <br>
+</mat-card>

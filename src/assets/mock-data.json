@@ -7,18 +7,21 @@
             "urlImagem":"/imagens/burrito.png",
             "itens": [
             {
+                "id": "1",
                 "nome": "SUADERO",
                 "descricao": "1 TORTILHA DE TRIGO SUAVE ENROLADAS COM CARNE BOVINA",
                 "urlImagem": "/imagens/suadero.png",
                 "preco": "25.00"
             },
             {
+                "id": "2",
                 "nome": "AL PASTOR",
                 "descricao": "1 TORTILHA DE TRIGO SUAVE ENROLADAS COM PORCO E ABACAXI",
                 "urlImagem": "/imagens/al-pastor.png",
                 "preco": "23.20"
             },
             {
+                "id": "3",
                 "nome": "LONGANIZA",
                 "descricao": "1 TORTILHA DE TRIGO SUAVE ENROLADAS FRANGO",
                 "urlImagem": "/imagens/longaniza.png",
@@ -33,23 +36,40 @@
         "urlImagem":"/imagens/burrito.png",
         "itens": [
         {
+            "id": "1",
             "nome": "3 TACOS SUADERO",
             "descricao": "TORTILLAS ORIGINALMENTE MEXICANAS DE MILHO SUAVE RECHEADAS DE CARNE BOVINA",
             "urlImagem": "/imagens/suadero.png",
             "preco": "25.00"
         },
         {
+            "id": "2",
             "nome": "3 TACOS AL PASTOR",
             "descricao": "TORTILLAS ORIGINALMENTE MEXICANAS DE MILHO SUAVE RECHEADAS DE CARNE SUÍNA E ABACAXI",
             "urlImagem": "/imagens/al-pastor.png",
             "preco": "23.20"
         },
         {
+            "id": "3",
             "nome": "3 TACOS DE POLLO",
             "descricao": "TORTILLAS ORIGINALMENTE MEXICANAS DE MILHO SUAVE RECHEADAS DE FRANGO",
             "urlImagem": "/imagens/longaniza.png",
             "preco": "23.00"
         }],
         "observacao": "TODOS ACOMPANHAM COENTRO E CEBOLA"        
-   }]
+    },
+    {
+        "ordem": 3,
+        "nome": "CARNITAS",
+        "urlImagem":"/imagens/burrito.png",
+        "itens": [
+        {
+            "id": "1",
+            "nome": "PORÇÃO DE CARNE MISTA",
+            "descricao": "CARNE DE BOI, PORCO E LINGUIÇA ACOMPANHADOS DE PEDAÇOS DE TORTILHA DE MILHO E TRIGO.",
+            "urlImagem": "/imagens/suadero.png",
+            "preco": "25.00"
+        }]
+   }    
+]
 }

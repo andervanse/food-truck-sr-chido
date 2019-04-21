@@ -1,0 +1,18 @@
+
+
+.title {
+    padding-bottom: 0.2rem;
+}
+
+.item-categoria {
+    padding: 0.5rem 0rem 3.0rem 0rem;
+}
+
+input.file {
+   height: 80px;
+   position: absolute;
+   text-align: center;
+   filter:alpha(opacity 0);
+   opacity: 0;
+   z-index: 2;
+}

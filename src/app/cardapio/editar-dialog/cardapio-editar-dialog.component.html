@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Editar Item</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <input matInput placeholder="Nome" type="text" [(ngModel)]="data.nome">
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput placeholder="Descrição" [(ngModel)]="data.descricao" rows="1"></textarea>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Preço" type="number" [(ngModel)]="data.preco">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions class="right">
+  <button mat-raised-button color="warn" (click)="onNoClick()">Cancelar</button>
+  <button mat-raised-button color="primary" [mat-dialog-close]="data" cdkFocusInitial>&nbsp; Salvar &nbsp;</button>
+</div>

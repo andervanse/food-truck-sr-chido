@@ -1,13 +1,14 @@
-<br>
-
-<div class="container">
+<div class="container menu-color">
+  <br>
 
   <mat-card *ngIf="!dinamico">
-    <img mat-card-image src="../assets/images/sr-chido-menu.png">
+    <div class="zoom">
+      <img mat-card-image src="../assets/images/sr-chido-menu.png">
+    </div>
   </mat-card>
 
   <div *ngIf="dinamico" > 
-    <div *ngFor="let categoria of menu?.categorias" class="box">
+    <div *ngFor="let categoria of cardapio?.categorias" class="box">
       <div class="title brown">
         <b>{{ categoria.nome }}</b>
         <div class="right">
@@ -17,10 +18,10 @@
 
       <div *ngFor="let item of categoria.itens">
         <div class="subtitle green">
-          {{ createDots(item.nome, 50) }} &nbsp;&nbsp; <span class="right"> {{ item.preco | currency:'BRL' }} </span>
+          {{ createDots(item.nome, 45) }} &nbsp;&nbsp; <span class="right"> {{ item.preco | currency:'BRL' }} </span>
         </div> 
-        <div class="subtitle brown">       
-          &nbsp;&nbsp;{{ item.descricao }}  
+        <div class="subtitle brown description">
+          {{ item.descricao }}  
         </div> 
         <br>          
       </div>
@@ -28,7 +29,7 @@
     </div>
   </div>
 
+  <br>
+  <br>
 </div>
 
-<br>
-<br>
