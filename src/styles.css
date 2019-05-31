@@ -50,6 +50,13 @@ body {
     padding-bottom: 1rem;
 }
 
+.mat-card-content {
+    margin: 2em 2em 2em 2em;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
 .brown {
     color: rgb(105, 55, 14);
 }
@@ -83,6 +90,17 @@ body {
     .subtitle {    
         font-size: 16px;
     } 
+}
+
+@media (max-width:760px) {
+    .mat-card-content {
+        margin: 1em 1em 1em 1em;
+        font-size: 20px;
+    }    
+}
+
+a {
+    text-decoration: none;
 }
 
 .right {
