@@ -11,7 +11,7 @@ import { MatSidenav } from '@angular/material';
 })
 export class AppNavComponent {
 
-  @ViewChild('drawer') drawer: MatSidenav;
+  @ViewChild('drawer', { static: false }) drawer: MatSidenav;
   isHandSetValue: boolean;
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)

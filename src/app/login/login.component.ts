@@ -12,7 +12,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private authService: AuthService) { }
 
-  @ViewChild('frmLogin') frmLogin : FormControl;
+  @ViewChild('frmLogin', { static: false }) frmLogin : FormControl;
 
   ngOnInit() {
   }
